@@ -31,10 +31,9 @@ class GroupViewSet(ModelViewSet):
 
 class PairViewSet(ModelViewSet):
     authentication_classes = (TokenAuthentication,)
-    model = Pair
     permission_classes = (IsAuthenticated,)
-    #queryset = Pair.objects.all()
-    #serializer_class = PairSerializer
+    queryset = Pair.objects.all()
+    serializer_class = PairSerializer
 
     def list(self, request):
         try:
