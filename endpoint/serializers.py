@@ -1,4 +1,3 @@
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
 from endpoint.models import Pair
